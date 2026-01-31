@@ -143,7 +143,7 @@ a { color: inherit; }
 
 .photo-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 16px;
   margin-bottom: 32px;
 }
@@ -162,6 +162,45 @@ a { color: inherit; }
 
 .photo-placeholder:hover {
   transform: scale(1.05) rotate(2deg);
+}
+
+/* Gallery Photos */
+.gallery-photo {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery-photo:hover {
+  transform: scale(1.05);
+}
+
+/* Video Section */
+.video-section {
+  margin-bottom: 40px;
+}
+
+.video-section h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(--dark);
+}
+
+.video-container {
+  max-width: 700px;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.video-container video {
+  width: 100%;
+  display: block;
 }
 
 /* Buttons */
