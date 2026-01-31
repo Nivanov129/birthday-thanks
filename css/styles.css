@@ -237,6 +237,31 @@ a { color: inherit; }
   line-height: 1.5;
 }
 
+/* Future Hint Section */
+.future-slide {
+  background: linear-gradient(180deg, #fff9f5 0%, #ffe8e8 50%, #fff9f5 100%);
+  padding: 100px 20px;
+}
+
+.hint-emoji {
+  font-size: 64px;
+  margin-bottom: 16px;
+  animation: sparkle 2s ease-in-out infinite;
+}
+
+@keyframes sparkle {
+  0%, 100% { transform: scale(1) rotate(0deg); opacity: 1; }
+  50% { transform: scale(1.1) rotate(5deg); opacity: 0.8; }
+}
+
+.hint-text {
+  font-family: 'Gloria Hallelujah', Rubik, Arial, sans-serif;
+  font-size: 24px;
+  color: var(--accent);
+  margin-top: 24px;
+  opacity: 0.8;
+}
+
 /* Footer */
 .site-footer {
   background: linear-gradient(180deg, #fff9f5 0%, #fff3e6 100%);
