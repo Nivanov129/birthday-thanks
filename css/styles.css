@@ -143,7 +143,7 @@ a { color: inherit; }
 
 .photo-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 16px;
   margin-bottom: 32px;
 }
@@ -348,6 +348,7 @@ a { color: inherit; }
 @media (max-width: 768px) {
   .photo-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
   }
   
   .moments-grid {
